@@ -1,0 +1,72 @@
+# Week 1 – AWS Basics & IAM Setup ☁️
+
+## 🧠 What I Learned
+- What is Cloud Computing and why AWS is the market leader  
+- Understanding AWS services: **Compute (EC2)**, **Storage (S3)**, **Identity & Access Management (IAM)**  
+- Difference between **Root user** and **IAM users**  
+- How permissions and security work in AWS  
+
+---
+
+🧠 1. What is Cloud Computing?
+
+Cloud computing means using the internet to store data, run applications, and access servers instead of using your own computer or data center.
+It helps save money because you only pay for what you use, and you don’t have to buy big machines to run your apps.
+
+☁️ 2. Why is AWS the Market Leader?
+
+AWS (Amazon Web Services) is the biggest and most trusted cloud platform in the world.
+It gives many services like servers, storage, databases, and tools for developers.
+AWS is known for being fast, secure, and affordable, and it’s used by many big companies like Netflix, Airbnb, and Amazon itself.
+
+💻 3. What is Compute (EC2)?
+
+EC2 (Elastic Compute Cloud) gives you virtual computers in the cloud.
+You can use these to run websites, apps, or software without having a physical computer.
+You can start, stop, or delete these servers anytime and only pay for the time you use them.
+
+📦 4. What is Storage (S3)?
+
+S3 (Simple Storage Service) is a place to store your files and data safely online.
+You can keep anything — photos, videos, backups, or code files.
+It’s secure, fast, and you can access your data from anywhere in the world.
+
+🔑 5. What is IAM (Identity and Access Management)?
+
+IAM helps you control who can use your AWS account and what they can do.
+You can create users, groups, and give them only the permissions they need.
+This keeps your account safe and prevents accidental or wrong changes.
+
+👤 6. Difference Between Root User and IAM User
+
+The Root User is the main owner of the AWS account. It has full access to everything.
+You should use it only for billing or setup.
+
+IAM Users are created under the root account. They have limited access and are used for daily work.
+This is safer because if one user makes a mistake, it won’t affect the whole account.
+
+## 🔑 IAM Setup Steps
+1. Logged into AWS Console using the **root account**
+2. Opened the **IAM (Identity & Access Management)** service
+3. Created a new **IAM User** named `devops-user`
+4. Gave it **AdministratorAccess** (for learning purpose only)
+5. Enabled **AWS Management Console access** for the user
+6. Created a **custom password** and noted it securely
+7. Signed out of the root account and logged in with the new IAM user
+8. Created an **Access Key** for CLI use (downloaded `.csv` file)
+9. Installed **AWS CLI** on my local system
+10. Configured the CLI using:
+   ```bash
+   aws configure
+
+🔒 7. How Do Permissions and Security Work in AWS?
+
+Permissions in AWS are given using policies.
+A policy tells AWS what a user is allowed or not allowed to do.
+For example, a user can get permission only to use S3 or EC2.
+AWS always follows the rule of least privilege — give users only the access they really need.
+
+
+## 🏁 Summary
+This week helped me understand how AWS works and why security is important.  
+Next step — start my first EC2 server and deploy a small app! 🚀

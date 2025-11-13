@@ -45,7 +45,7 @@ I'm combining my software background with new cloud skills to bridge development
 
 ## 🌐 Connect With Me
 💼 LinkedIn(https://www.linkedin.com/in/umesh-kumar-744132267/)  
-🐙 GitHub(https://github.com/umeshcloudops)  
+🐙 GitHub(https://github.com/umesh-cloudops)  
 ---
 
 > “Keep learning, keep building, and share what you discover.” 🚀

@@ -1,0 +1,101 @@
+Week 2 – EC2 Basics, Linux Commands & Security Groups 🚀
+🧠 What I Learned
+
+What EC2 is and why it's used
+
+How to launch and connect to an EC2 instance
+
+Basic Linux commands (very important in DevOps)
+
+What Security Groups are and how they control traffic
+
+How to install software on EC2
+
+💻 1. What is EC2?
+
+EC2 is a virtual machine in the cloud.
+You can choose CPU, RAM, storage, OS, and pay only for what you use.
+
+Good for: apps, websites, automation scripts, learning Linux.
+
+🚀 2. Launching an EC2 Instance
+
+Open EC2 Dashboard
+
+Click Launch Instance
+
+Choose Amazon Linux or Ubuntu
+
+Select t2.micro (free tier)
+
+Create/select an SSH key pair
+
+Set Security Group → allow SSH (22)
+
+Launch and wait for Running status
+
+🔌 3. Connecting to EC2 (SSH)
+
+Linux/Mac:
+
+chmod 400 mykey.pem
+ssh -i "mykey.pem" ec2-user@PUBLIC_IP
+
+
+Ubuntu:
+
+ssh -i "mykey.pem" ubuntu@PUBLIC_IP
+
+🐧 4. Linux Basics Learned
+File & Directory:
+ls
+pwd
+cd folder/
+mkdir test
+rm file.txt
+
+File editing:
+nano file.txt
+cat file.txt
+
+Updates:
+sudo yum update -y   # Amazon Linux
+sudo apt update -y   # Ubuntu
+
+🔒 5. What Are Security Groups?
+
+Security Groups act as firewalls.
+
+Common inbound rules:
+
+SSH → 22
+
+HTTP → 80
+
+HTTPS → 443
+
+They control what traffic can enter your EC2 instance.
+
+🔥 6. Installing Software (Example: Apache)
+
+Amazon Linux:
+
+sudo yum install httpd -y
+sudo systemctl start httpd
+
+
+Ubuntu:
+
+sudo apt install apache2 -y
+sudo systemctl start apache2
+
+
+Visit:
+
+http://PUBLIC_IP
+
+🏁 Summary
+
+This week I learned how to launch EC2, connect using SSH, run Linux commands, install software, and manage traffic using Security Groups.
+
+Next week → S3 advanced & Static Website Hosting! 🚀
